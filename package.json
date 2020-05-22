@@ -10,9 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/ihavecoke/privacy-holder.git"
   },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
-  },
   "keywords": [
     "privacy",
     "id_card",
