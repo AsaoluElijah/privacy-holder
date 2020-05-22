@@ -1,7 +1,7 @@
 {
   "name": "privacy-holder",
-  "version": "1.0.0",
-  "description": "holder your email mobile and name even id_card with holder char '*'",
+  "version": "0.0.1",
+  "description": "Hide some sensitive data with the character '*'",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -10,9 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/ihavecoke/privacy-holder.git"
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
   "keywords": [
     "privacy",
     "id_card",
+    "sensitive",
+    "string holder",
+    "hide",
     "email"
   ],
   "author": "ihavecoke",
