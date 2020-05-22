@@ -1,6 +1,6 @@
 # privacy-holder
 
-Hidden Privacy String with *
+Hide some sensitive data with the character "*"
 
 ## How to use ?
 
