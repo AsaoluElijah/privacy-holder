@@ -1,20 +1,27 @@
 # privacy-holder
 
-Hidden Privacy String with * 
+Hidden Privacy String with *, Provder commons methods like: `email`, `phone number`, 'ID Card'
 
 ## How to use ?
 
-### email 
+```bash
 
-    input: ihavecoke@163.com
-    output: ih*******@163.com
-     
-### phone number
+// install with yarn 
+yarn add privacy-holder
 
-    input: 13800000000
-    output: 138****0000
+// require to your code
+const privacy = require('privacy-holder')
 
-### ID Card numbers
+// email
+privacy.email("ihavecoke@163.com") // ih*******@163.com
 
-    input: 510122199102132018
-    output: 510***19******2018
+// ID Card
+privacy.idCard("510122199102132018") // 510***19******2018
+
+// phone number
+privacy.email("13800000000") // 138****0000
+
+// all 
+privacy.all('any-string-will-replace-with-*') // ******************************
+
+```
