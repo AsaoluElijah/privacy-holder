@@ -1,0 +1,27 @@
+{
+  "name": "privacy-holder",
+  "version": "1.0.0",
+  "description": "holder your email mobile and name even id_card with holder char '*'",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihavecoke/privacy-holder.git"
+  },
+  "keywords": [
+    "privacy",
+    "id_card",
+    "email"
+  ],
+  "author": "ihavecoke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ihavecoke/privacy-holder/issues"
+  },
+  "homepage": "https://github.com/ihavecoke/privacy-holder#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
