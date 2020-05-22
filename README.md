@@ -1,6 +1,6 @@
 # privacy-holder
 
-Hidden Privacy String with *, Provder commons methods like: `email`, `phone number`, 'ID Card'
+Hidden Privacy String with *
 
 ## How to use ?
 
