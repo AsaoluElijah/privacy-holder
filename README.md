@@ -23,6 +23,10 @@ then
 
 `privacy.email("ihavecoke@163.com") // ih*******@163.com`
 
+`privacy.name("ihavecoke") // *`
+
+`privacy.name("i havecoke") // *havecoke`
+
 `privacy.idCard("510122199102132018") // 510***19******2018`
 
 `privacy.phone("13800000000") // 138****0000`
