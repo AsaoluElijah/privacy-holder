@@ -29,7 +29,7 @@ then
 
 `privacy.idCard("510122199102132018") // 510***19******2018`
 
-`privacy.phone("13800000000") // 138****0000`
+`privacy.phoneNumber("13800000000") // 138****0000`
 
 `privacy.all('any-string-will-replace-with-*') // ******************************`
 
