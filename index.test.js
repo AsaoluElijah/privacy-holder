@@ -5,6 +5,10 @@ test('mobile', () => {
   expect(privacy.mobile('+86-13800000000')).toEqual('+86-138****0000')
 })
 
+test('phoneNumber', () => {
+  expect(privacy.phoneNumber('13800000000')).toEqual('138****0000')
+})
+
 test('email', () => {
   expect(privacy.email('a@163.com')).toEqual('*@163.com')
   expect(privacy.email('ab@163.com')).toEqual('**@163.com')

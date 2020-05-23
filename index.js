@@ -27,6 +27,9 @@ module.exports = {
       return [privacyValue].join('-')
     }
   },
+  phoneNumber(rawValue) {
+    return this.mobile(rawValue)
+  },
   email(rawEmail = '') {
     if (!rawEmail) return rawEmail
     const userName = rawEmail.split('@')[0]
@@ -48,10 +51,11 @@ module.exports = {
       return rawName.length === 1 ? '*' : `*${rawName.slice(-1, 1)}`
     }
   },
-  all(rawValue = '') {
-    return '*'.repeat(rawValue.length)
-  },
   idCard(rawIdCard = '') {
     return rules.partialHolder(rules.partialHolder(rawIdCard, 3, 3), 8, 6)
   },
+  all(rawValue = '') {
+    return '*'.repeat(rawValue.length)
+  },
+  ...rules,
 }
