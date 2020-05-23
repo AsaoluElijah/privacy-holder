@@ -1,27 +1,31 @@
-# privacy-holder
+## privacy-holder
 
-Hide some sensitive data with the character "*"
+Hide some sensitive data with character '*'
 
-## How to use ?
+### Features
+1. Support hide common user data like: email, phone number, id card etc.
+2. Support Custom rules to hide sensitive data.
+3. Test Coverage 100%
 
-```bash
+### Install
 
-// install with yarn 
-yarn add privacy-holder
+`yarn add privacy-holder`
 
-// require to your code
-const privacy = require('privacy-holder')
+or
 
-// email
-privacy.email("ihavecoke@163.com") // ih*******@163.com
+`npm install privacy-holder`
 
-// ID Card
-privacy.idCard("510122199102132018") // 510***19******2018
+### Usage
 
-// phone number
-privacy.phone("13800000000") // 138****0000
+`const privacy = require('privacy-holder')`
 
-// all 
-privacy.all('any-string-will-replace-with-*') // ******************************
+then
 
-```
+`privacy.email("ihavecoke@163.com") // ih*******@163.com`
+
+`privacy.idCard("510122199102132018") // 510***19******2018`
+
+`privacy.phone("13800000000") // 138****0000`
+
+`privacy.all('any-string-will-replace-with-*') // ******************************`
+
