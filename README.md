@@ -15,6 +15,8 @@ or
 
 `npm install privacy-holder`
 
+PS: Do not install version `0.0.4, 0.0.5` these versions are break
+
 ### Usage
 
 `const privacy = require('privacy-holder')`
