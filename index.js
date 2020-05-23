@@ -1,29 +1,9 @@
-const replaceBetween = (rawString, targetString, startIndex, endIndex) => {
-  return rawString.substring(0, startIndex) + targetString + rawString.substring(endIndex + 1)
-}
+const rules = require('./rule')
 
 function flatten(arr) {
   return arr.reduce(function (flat, toFlatten) {
     return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten)
   }, [])
-}
-
-const partialHidden = (rawValue = '', start, count) => {
-  let targetString = ''
-  const rawLength = rawValue.length
-  let endIndex = null
-  if (start && count) {
-    endIndex = start + count
-  }
-
-  Array.from(rawValue).forEach((char, index) => {
-    let shouldKeep = endIndex
-      ? index < start || index >= endIndex
-      : index === rawLength - 1 || index === rawLength - 2 || (rawLength >= 5 && index === 0)
-    targetString += shouldKeep ? char : '*'
-  })
-
-  return targetString
 }
 
 module.exports = {
@@ -40,7 +20,7 @@ module.exports = {
       newValue = rawValue
     }
 
-    const privacyValue = replaceBetween(newValue, '****', 3, 6)
+    const privacyValue = rules.holder(newValue, '****', 3, 6)
     if (prefix) {
       return [prefix, privacyValue].join('-')
     } else {
@@ -72,6 +52,6 @@ module.exports = {
     return '*'.repeat(rawValue.length)
   },
   idCard(rawIdCard = '') {
-    return partialHidden(partialHidden(rawIdCard, 3, 3), 8, 6)
+    return rules.partialHolder(rules.partialHolder(rawIdCard, 3, 3), 8, 6)
   },
 }
