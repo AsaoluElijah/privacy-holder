@@ -1,10 +1,5 @@
-const rules = require('./rule')
-
-function flatten(arr) {
-  return arr.reduce(function (flat, toFlatten) {
-    return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten)
-  }, [])
-}
+const rules = require('./src/rule')
+const utils = require('./src/utils')
 
 module.exports = {
   mobile(rawValue = '') {
@@ -45,7 +40,7 @@ module.exports = {
   name(rawName = '') {
     if (!rawName) return rawName
     if (/[a-z]/i.test(rawName)) {
-      const nameParts = flatten(rawName.split(' '))
+      const nameParts = utils.flatten(rawName.split(' '))
       return nameParts.length === 1 ? '*' : `*${nameParts[nameParts.length - 1]}`
     } else {
       return rawName.length === 1 ? '*' : `*${rawName.slice(-1, 1)}`
