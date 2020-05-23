@@ -23,9 +23,13 @@
   "bugs": {
     "url": "https://github.com/ihavecoke/privacy-holder/issues"
   },
-  "files": ["index.js", "README.md"],
+  "files": [
+    "index.js",
+    "README.md"
+  ],
   "homepage": "https://github.com/ihavecoke/privacy-holder#readme",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "prettier": "^2.0.5"
   }
 }
