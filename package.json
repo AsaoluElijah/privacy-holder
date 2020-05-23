@@ -1,6 +1,6 @@
 {
   "name": "privacy-holder",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Hide some sensitive data with the character '*'",
   "main": "index.js",
   "scripts": {
@@ -25,11 +25,13 @@
   },
   "files": [
     "index.js",
+    "rule.js",
     "README.md"
   ],
   "homepage": "https://github.com/ihavecoke/privacy-holder#readme",
   "devDependencies": {
     "jest": "^24.9.0",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "privacy-holder": "^0.0.4"
   }
 }

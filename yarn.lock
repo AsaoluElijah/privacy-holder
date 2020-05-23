@@ -2501,6 +2501,11 @@ pretty-format@^24.9.0:
     ansi-styles "^3.2.0"
     react-is "^16.8.4"
 
+privacy-holder@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.npm.taobao.org/privacy-holder/download/privacy-holder-0.0.4.tgz?cache=0&sync_timestamp=1590254339767&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fprivacy-holder%2Fdownload%2Fprivacy-holder-0.0.4.tgz#6dbeac884448f7dc8b458805e26b82fd4ba5d621"
+  integrity sha1-bb6siERI99yLRYgF4muC/Uul1iE=
+
 prompts@^2.0.1:
   version "2.3.2"
   resolved "https://registry.npm.taobao.org/prompts/download/prompts-2.3.2.tgz?cache=0&sync_timestamp=1584535708984&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fprompts%2Fdownload%2Fprompts-2.3.2.tgz#480572d89ecf39566d2bd3fe2c9fccb7c4c0b068"
