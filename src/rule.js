@@ -1,5 +1,9 @@
 module.exports = {
-  //  get fragment from raw string
+
+  /*
+  * substring rawString from startIndex end at endIndex and holder with targetString
+  * fragment('abcdefgi','####',2,6) => 'ab#i'
+  * */
   fragment(rawString, targetString, startIndex, endIndex) {
     return rawString.substring(0, startIndex) + targetString + rawString.substring(endIndex + 1)
   },
