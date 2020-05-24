@@ -31,5 +31,5 @@ test('name', () => {
 })
 
 test('all', () => {
-  expect(privacy.all('any-string-will-replace-with-*')).toEqual('******************************')
+  expect(privacy.all('all-will-be-*')).toEqual('*************')
 })
