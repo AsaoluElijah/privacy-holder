@@ -15,7 +15,7 @@ module.exports = {
       newValue = rawValue
     }
 
-    const privacyValue = rules.holder(newValue, '****', 3, 6)
+    const privacyValue = rules.fragment(newValue, '****', 3, 6)
     if (prefix) {
       return [prefix, privacyValue].join('-')
     } else {

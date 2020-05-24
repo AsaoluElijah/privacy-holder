@@ -1,6 +1,6 @@
 module.exports = {
-  //  rules.holder(rawString, targetString, startIndex, endIndex)
-  holder(rawString, targetString, startIndex, endIndex) {
+  //  get fragment from raw string
+  fragment(rawString, targetString, startIndex, endIndex) {
     return rawString.substring(0, startIndex) + targetString + rawString.substring(endIndex + 1)
   },
 
