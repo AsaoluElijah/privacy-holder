@@ -1,5 +1,9 @@
 const privacy = require('./index.js')
 
+test('fragment', () => {
+  expect(privacy.fragment('abcdefgi','####',2,6)).toEqual("ab####i")
+})
+
 test('mobile', () => {
   expect(privacy.mobile('13800000000')).toEqual('138****0000')
   expect(privacy.mobile('+86-13800000000')).toEqual('+86-138****0000')
